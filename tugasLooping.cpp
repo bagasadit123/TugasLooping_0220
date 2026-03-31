@@ -22,3 +22,22 @@ bool cekPrima(int x) {
     }
     return true;
 }
+
+bool cekFibonacci(int x) {
+    int a = 0, b = 1, c;
+
+    if (x == 0 || x == 1) {
+        return true;
+    }
+
+    while (b <= x) {
+        if (b == x) {
+            return true;
+        }
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    return false;
+}
