@@ -64,3 +64,25 @@ void menu() {
     cout << "0. Keluar" << endl;
     cout << "Pilihan Anda: ";
 }
+int main() {
+    while (true) {
+        menu();
+        cin >> pilihan;
+
+        switch (pilihan) {
+            case 1:
+                tampilPrima();
+                break;
+            case 2:
+                tampilFibonacci();
+                break;
+            case 0:
+                cout << "Program selesai." << endl;
+                return 0;
+            default:
+                cout << "Pilihan tidak valid!" << endl;
+        }
+    }
+
+    return 0;
+}
