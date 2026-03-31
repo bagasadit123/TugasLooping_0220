@@ -49,3 +49,11 @@ void tampilPrima() {
         cout << n << " bukan bilangan prima." << endl;
     }
 }
+void tampilFibonacci() {
+    inputAngka();
+    if (cekFibonacci(n)) {
+        cout << n << " termasuk dalam deret Fibonacci." << endl;
+    } else {
+        cout << n << " bukan bagian dari deret Fibonacci." << endl;
+    }
+}
