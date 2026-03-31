@@ -41,3 +41,11 @@ bool cekFibonacci(int x) {
 
     return false;
 }
+void tampilPrima() {
+    inputAngka();
+    if (cekPrima(n)) {
+        cout << n << " adalah bilangan prima." << endl;
+    } else {
+        cout << n << " bukan bilangan prima." << endl;
+    }
+}
